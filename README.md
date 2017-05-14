@@ -9,8 +9,6 @@ MVVM design pattern based PHP framework.
 
 /
 
-/
-
 |-index.php
 
 |
@@ -18,7 +16,6 @@ MVVM design pattern based PHP framework.
 |-Components
 
         |-Autoloader
-        
         |-Database
         
                 |-PDOBase               implements DatabaseAdapter
@@ -42,13 +39,9 @@ MVVM design pattern based PHP framework.
         |-FFC
         
                 |-Analyzer
-                
                 |-DiC
-                
                 |-FullRequests  implements RequestsAdapter
-                
                 |-Router
-                
                 |-Routes                implememts RoutesAdapter
                 
 |
@@ -56,17 +49,11 @@ MVVM design pattern based PHP framework.
 |-Interfaces
 
         |-DatabaseAdapter
-        
         |-ModelAdapter
-        
         |-RequestsAdapter
-        
         |-RoutesAdapter
-        
         |-TemplateAdapter
-        
         |-ViewModelAdapter
-        
         |-ViewTemplateAdapter
         
 |
@@ -74,7 +61,6 @@ MVVM design pattern based PHP framework.
 |-Layouts
 
         |-ArticleLayout
-        
         |-TopicsLayout
         
 |
@@ -82,7 +68,6 @@ MVVM design pattern based PHP framework.
 |-Model
 
         |-Article                       extends ParentModel
-        
         |-ParentModel           implements ModelAdapter                 abstract
         
 |
@@ -96,9 +81,7 @@ MVVM design pattern based PHP framework.
 |-ViewModel
 
         |-ParentViewModel       implements ViewModelAdapter             abstract
-        
         |-ViewList                      extends ParentViewModel
-        
         |-ViewOne                       extends ParentViewModel
         
 |
@@ -106,12 +89,9 @@ MVVM design pattern based PHP framework.
 |-Views
 
         |-ViewTemplates
-        
                 |-ArticleView   extends ParentViewTemplate
-                
                 |-ParentViewTemplate
-                                                implements ViewTemplateAdapter
-                                                
+                                                implements ViewTemplateAdapter    abstract
                 |-TopicsView    extends ParentViewTemplate
 
 
