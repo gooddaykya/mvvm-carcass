@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+	<em>
+		<?php echo !empty($title) ? $title : ''; ?>
+	</em>
+	<blockquote>
+			<?php echo !empty($quots) ? "<q>" . $quots . "</q>" : ''; ?>
+	</blockquote>
+
+	<?php echo !empty($content) ? $content : ''; ?>
+
+	<div align = "right">
+			<?php echo !empty($author) ? $author : ''; ?>
+			<br />
+			<?php echo !empty($date) ? $date : ''; ?>
+	</div>
+
+
+<!--use <dbo dir = "rtl">hebrew text</bdo>-->

@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+
+<em>Topics list</em>
+<ul>
+	<? for ($i = 0; $i < count($title); $i++): ?>
+		<li><a href='/articles/<?php echo ($i+1); ?>'><?php echo $title["$i"]; ?></a> (<?php echo $date["$i"]; ?>)</li>
+	<? endfor;?>
+</ul>
