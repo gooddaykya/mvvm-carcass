@@ -87,6 +87,8 @@
 
 			}
 
+			if (isset($diadObj[2]))
+				$diadObj[2]->$action($params);
 			$diadObj[0]->renderOutput();
 		}
 	}
